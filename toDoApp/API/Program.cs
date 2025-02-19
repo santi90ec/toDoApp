@@ -55,9 +55,9 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
-builder.Services.AddApplication()
-                .AddInfrastructure();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure(connectionString);
 //builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();

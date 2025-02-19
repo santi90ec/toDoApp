@@ -5,17 +5,15 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{22217BDA-161C-4AB4-B259-5907205AAD7C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB5A0484-4375-4EDC-B2AC-C9BAA64EE60E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{53372748-1A76-417C-BD16-2F7E87A85633}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Tests", "Application.Tests\Application.Tests.csproj", "{B3598913-87EA-4335-A950-DE12C8D05021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{CA3AB62C-534C-4A29-BB8B-344EAA18FDFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{CA3AB62C-534C-4A29-BB8B-344EAA18FDFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{0AB85E87-DD3C-4605-8DB0-AB8887261754}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{0AB85E87-DD3C-4605-8DB0-AB8887261754}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{FF510EDE-86CD-495A-959E-5B29828BF382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{FF510EDE-86CD-495A-959E-5B29828BF382}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,11 +46,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{22217BDA-161C-4AB4-B259-5907205AAD7C} = {CB5A0484-4375-4EDC-B2AC-C9BAA64EE60E}
 		{B3598913-87EA-4335-A950-DE12C8D05021} = {53372748-1A76-417C-BD16-2F7E87A85633}
-		{CA3AB62C-534C-4A29-BB8B-344EAA18FDFA} = {CB5A0484-4375-4EDC-B2AC-C9BAA64EE60E}
-		{0AB85E87-DD3C-4605-8DB0-AB8887261754} = {CB5A0484-4375-4EDC-B2AC-C9BAA64EE60E}
-		{FF510EDE-86CD-495A-959E-5B29828BF382} = {CB5A0484-4375-4EDC-B2AC-C9BAA64EE60E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F3EAAFF-8039-4644-AA13-3A52E9F873BC}

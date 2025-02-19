@@ -9,18 +9,14 @@ namespace Infrastructure
 {
     public class toDoContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
-        public DbSet<Task> Tasks { get; set; }
         public toDoContext(DbContextOptions<toDoContext> options) : base(options) { }
+
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); // Configurar la relación entre User y Task
             modelBuilder.Entity<User>()
-                .HasMany<Task>()
-                .WithOne()
-                .HasForeignKey(t => t.Id);
-
-
+            .HasKey(u => u.IdUser);
         }
     }
 }
